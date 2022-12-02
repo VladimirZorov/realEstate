@@ -1,5 +1,7 @@
 package softuni.exam.service;
 
+import softuni.exam.models.entity.Town;
+
 import java.io.IOException;
 
 // TODO: Implement all methods
@@ -10,4 +12,10 @@ public interface TownService {
     String readTownsFileContent() throws IOException;
 	
 	String importTowns() throws IOException;
+
+    Town findTownByName(Town town);
+
+    String importCars() throws IOException;
+
+    Town findTownByName(String townName);
 }

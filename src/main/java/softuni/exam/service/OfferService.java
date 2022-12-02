@@ -13,4 +13,6 @@ public interface OfferService {
 	String importOffers() throws IOException, JAXBException;
 
     String exportOffers();
+
+    String getOffersOrderByAreaThenPrice();
 }

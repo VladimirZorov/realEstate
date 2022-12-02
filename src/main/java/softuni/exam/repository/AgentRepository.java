@@ -1,6 +1,16 @@
 package softuni.exam.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import softuni.exam.models.entity.Agent;
+
+import java.util.Optional;
+
 // TODO:
-public interface AgentRepository {
+@Repository
+public interface AgentRepository extends JpaRepository<Agent, Long> {
+
+    Optional<Agent> findAgentByFirstName(String firstName);
+
 
 }

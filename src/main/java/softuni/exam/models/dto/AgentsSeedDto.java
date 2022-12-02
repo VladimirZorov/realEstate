@@ -6,7 +6,7 @@ import softuni.exam.models.entity.Town;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 
-public class AgentSeedDto {
+public class AgentsSeedDto {
 
     @Expose
     private String firstName;
@@ -17,7 +17,7 @@ public class AgentSeedDto {
     @Expose
     private Town town;
 
-    public AgentSeedDto() {
+    public AgentsSeedDto() {
     }
 
     @Size(min = 2)
@@ -43,7 +43,7 @@ public class AgentSeedDto {
         return email;
     }
 
-    public AgentSeedDto setEmail(String email) {
+    public AgentsSeedDto setEmail(String email) {
         this.email = email;
         return this;
     }
@@ -52,7 +52,7 @@ public class AgentSeedDto {
         return town;
     }
 
-    public AgentSeedDto setTown(Town town) {
+    public AgentsSeedDto setTown(Town town) {
         this.town = town;
         return this;
     }
